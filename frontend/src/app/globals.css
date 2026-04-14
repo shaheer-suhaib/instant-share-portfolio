@@ -46,6 +46,24 @@ a {
   text-decoration: none;
 }
 
+button,
+[role="button"],
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+summary,
+a[href] {
+  cursor: pointer;
+}
+
+button:disabled,
+input:disabled,
+select:disabled,
+textarea:disabled,
+[aria-disabled="true"] {
+  cursor: not-allowed;
+}
+
 .font-serif {
   font-family: var(--font-display), serif;
 }
