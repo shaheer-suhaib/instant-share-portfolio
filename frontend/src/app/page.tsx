@@ -66,14 +66,14 @@ export default function Home() {
             </div>
 
             <div className="grid gap-5 sm:grid-cols-2">
-              <Card className="bg-slate-950 text-white sm:translate-y-10">
+              <Card className="!bg-slate-950 text-white sm:translate-y-10">
                 <p className="text-xs uppercase tracking-[0.28em] text-white/60">Builder</p>
                 <p className="mt-4 text-2xl font-semibold">Guided wizard</p>
                 <p className="mt-3 text-sm leading-7 text-white/70">
                   Eight steps, clear validation, asset uploads, and a publish screen that maps directly to your API.
                 </p>
               </Card>
-              <Card className="bg-[linear-gradient(135deg,#f7f1e8,#e8f5ff)]">
+              <Card className="bg-[linear-gradient(135deg,#f7f1e8,#e8f5ff)] dark:bg-[linear-gradient(135deg,#1e293b,#0f172a)]">
                 <p className="text-xs uppercase tracking-[0.28em] text-slate-600 dark:text-slate-300">Share page</p>
                 <p className="mt-4 text-2xl font-semibold text-slate-950 dark:text-white">Public route</p>
                 <p className="mt-3 text-sm leading-7 text-slate-700 dark:text-slate-300">
@@ -160,7 +160,10 @@ export default function Home() {
               />
               <Card className="space-y-4">
                 {workflow.map((item) => (
-                  <div key={item} className="flex gap-4 rounded-[24px] border border-slate-200 bg-slate-50 p-4">
+                  <div
+                    key={item}
+                    className="flex gap-4 rounded-[24px] border border-slate-200 bg-slate-50 p-4 dark:border-white/10 dark:bg-slate-900/70"
+                  >
                     <span className="mt-1 inline-flex h-8 w-8 items-center justify-center rounded-full bg-slate-950 text-white">
                       <Check className="h-4 w-4" />
                     </span>
@@ -174,7 +177,7 @@ export default function Home() {
 
         <section className="pb-12 sm:pb-18">
           <Shell>
-            <Card className="bg-slate-950 text-white">
+            <Card className="!bg-slate-950 text-white">
               <div className="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
                 <div>
                   <p className="text-xs font-semibold uppercase tracking-[0.28em] text-white/60">

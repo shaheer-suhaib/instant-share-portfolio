@@ -66,7 +66,7 @@ export function SectionHeading({
       <h2
         className={cn(
           "text-3xl font-semibold leading-tight sm:text-4xl",
-          invert ? "text-white" : "text-slate-950"
+          invert ? "text-white" : "text-slate-950 dark:text-white"
         )}
       >
         {title}
