@@ -31,7 +31,7 @@ export function Card({
   return (
     <div
       className={cn(
-        "rounded-[28px] border border-black/6 bg-white/78 p-6 shadow-[0_18px_60px_rgba(20,22,28,0.08)] backdrop-blur dark:border-white/10 dark:bg-slate-900/78 dark:shadow-[0_18px_60px_rgba(0,0,0,0.28)]",
+        "cursor-pointer rounded-[28px] border border-black/6 bg-white/78 p-6 shadow-[0_18px_60px_rgba(20,22,28,0.08)] backdrop-blur dark:border-white/10 dark:bg-slate-900/78 dark:shadow-[0_18px_60px_rgba(0,0,0,0.28)]",
         className
       )}
     >
@@ -103,7 +103,7 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
         ref={ref}
         type={type}
         className={cn(
-          "inline-flex items-center justify-center rounded-full px-5 py-3 text-sm font-semibold transition duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 disabled:cursor-not-allowed disabled:opacity-60",
+          "inline-flex cursor-pointer items-center justify-center rounded-full px-5 py-3 text-sm font-semibold transition duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 disabled:cursor-not-allowed disabled:opacity-60",
           variants[variant],
           className
         )}
