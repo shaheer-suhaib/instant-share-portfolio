@@ -307,9 +307,9 @@ export function BuilderWizard() {
 
   return (
     <Shell className="py-8 sm:py-12">
-      <div className="grid gap-8 xl:grid-cols-[0.72fr_1.28fr]">
+      <div className="grid items-start gap-8 xl:grid-cols-[0.72fr_1.28fr]">
         <aside className="space-y-6 xl:sticky xl:top-24 xl:self-start">
-          <Card className="bg-slate-950 text-white">
+          <Card className="!bg-slate-950 text-white">
             <div className="space-y-6">
               <div className="flex items-center justify-between">
                 <span className="inline-flex items-center gap-2 rounded-full bg-white/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.24em] text-white/80">
